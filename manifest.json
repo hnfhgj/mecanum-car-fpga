@@ -1,0 +1,342 @@
+[
+  {
+    "name": "三柱导航与四轮测试_源码_20261027.zip",
+    "original_sha256": "446e19c34f5d09569adc550363d62e447e6d6e469c717f9dfe3fc18f3314799e",
+    "published_sha256": "cb90e5e75a1b4b894c4a28d52ad71b9b753ec26f11a789fa749ed9c6f77b056b",
+    "omitted": [
+      "motor/pillar_nav/attitude_equivalence_console.log",
+      "motor/pillar_nav/attitude_equivalence.log",
+      "motor/pillar_nav/pipeline_tests_console.log",
+      "motor/pillar_nav/pipeline_tests.log",
+      "motor/pillar_nav/tests_console.log",
+      "motor/pillar_nav/tests.log",
+      "motor/pillar_nav/top_elaboration_console.log",
+      "motor/pillar_nav/uart_navigation_console.log",
+      "motor/pillar_nav/uart_navigation_test.log",
+      "motor/pillar_nav/tests/nav_menu_simulation.png"
+    ]
+  },
+  {
+    "name": "任务4按路径执行_97F5R4.zip",
+    "original_sha256": "e93a9b772b36e9ebd22023af0d90c80de735b9e346ef4e5c4f390a6d339fa415",
+    "published_sha256": "f4eab7aadd9215c12c11a71161ffa728d7142e38f6bbb983c5ff6991c58664ef",
+    "omitted": [
+      "任务4按路径执行_97F5R4/固件与验证/build.log",
+      "任务4按路径执行_97F5R4/固件与验证/gui_smoke.log",
+      "任务4按路径执行_97F5R4/固件与验证/python_tests.log",
+      "任务4按路径执行_97F5R4/固件与验证/timing.html",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/basic_nav_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/cloud_stream_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/directional_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/hold_top_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/manual_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/pc_bridge_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/pc_control_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/pc_motor_pipeline_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/snapshot_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/speed_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/square_frame_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/wireless_stream_tb.log",
+      "任务4按路径执行_97F5R4/固件与验证/RTL仿真/wireless_top_tb.log"
+    ]
+  },
+  {
+    "name": "保护恢复与受阻重规划_97F4R5.zip",
+    "original_sha256": "bcd52ebd781c821431d24646c23555407b6fc8d8ddb8f447d72ce7853b23655d",
+    "published_sha256": "763f125e33362d2f19b9460ae34d0401db59f5f8f7b4d2380a47a22c8c991046",
+    "omitted": [
+      "保护恢复与受阻重规划_97F4R5/验证记录/gui_smoke.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/python_tests.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/recovery_tests.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/basic_nav_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/cloud_stream_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/directional_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/hold_top_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/manual_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/pc_bridge_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/pc_control_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/pc_motor_pipeline_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/snapshot_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/speed_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/square_frame_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/wireless_stream_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4仿真/wireless_top_tb.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4硬件构建/build.log",
+      "保护恢复与受阻重规划_97F4R5/验证记录/原97F4硬件构建/timing.html"
+    ]
+  },
+  {
+    "name": "当前工程_摄像头五页_82A6_20261025.zip",
+    "original_sha256": "eb19e18b96171d3ba7e0297af93238533fa789d24a408f02b08686c19f516e42",
+    "published_sha256": "696a82977448517d0509b0a6afb463c297467f694bb72db2bc975d72aef3db40",
+    "omitted": [
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_flash_codes.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_flash_reload.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_flash_serial_retry.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_flash_serial.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_flash.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_serial.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_sram.log",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6_timing.html",
+      "当前工程_摄像头五页_82A6/verification/camera_82A6.pin.html",
+      "当前工程_摄像头五页_82A6/verification/camera_build.log",
+      "当前工程_摄像头五页_82A6/verification/camera_capture_config_regression.log",
+      "当前工程_摄像头五页_82A6/verification/camera_clock_test.log",
+      "当前工程_摄像头五页_82A6/verification/camera_dashboard_integration.log",
+      "当前工程_摄像头五页_82A6/verification/camera_existing_dashboard_regression.log",
+      "当前工程_摄像头五页_82A6/verification/camera_existing_keys_regression.log",
+      "当前工程_摄像头五页_82A6/verification/camera_fifth_page_telemetry.log",
+      "当前工程_摄像头五页_82A6/verification/camera_synthesis.log"
+    ]
+  },
+  {
+    "name": "方框定位避障_工程_20261029.zip",
+    "original_sha256": "8af92e0d6d30be23e66bbc10ab60b10b193a492a7f4f2a54f2b29af2679e17cb",
+    "published_sha256": "0b2b228187e769c3c28985326f34a5bb3ae634c91b7471dec09c077a4cbf7cf2",
+    "omitted": [
+      "motor/square_nav/control_ui_test_console.log",
+      "motor/square_nav/detour_test_console.log",
+      "motor/square_nav/integration_test_console.log",
+      "motor/square_nav/project_test_console.log",
+      "motor/square_nav/frame_test_console.log",
+      "motor/square_nav/frame_test.log",
+      "motor/square_nav/route_test_console.log",
+      "motor/square_nav/reference_detour.png",
+      "motor/square_nav/integration_test.log",
+      "motor/square_nav/route_test.log",
+      "motor/square_nav/build.log",
+      "motor/square_nav/menu_simulation.png",
+      "motor/square_nav/control_ui_test.log",
+      "motor/square_nav/project_test.log",
+      "motor/square_nav/renderer_test_console.log",
+      "motor/square_nav/map_test.log",
+      "motor/square_nav/renderer_test.log",
+      "motor/square_nav/cadence_test_console.log",
+      "motor/square_nav/top_test.log",
+      "motor/square_nav/detour_test.log",
+      "motor/square_nav/map_test_console.log",
+      "motor/square_nav/cadence_test.log",
+      "motor/square_nav/top_test_console.log",
+      "motor/square_nav/release/timing.html",
+      "motor/square_nav/build_final.log"
+    ]
+  },
+  {
+    "name": "电脑控制小车_97C4_完整工程_20261031.zip",
+    "original_sha256": "ce87dccdc1298185e062dc9c2a944fb5329b57c3200d348e4a5c4c55f5a2d290",
+    "published_sha256": "3a2d743eb6ecacb549e0ad41992a05406a0b9250596f2383b61ef94cfc5186ca",
+    "omitted": [
+      "motor/pc_control/build_final.log",
+      "motor/pc_control/release/timing.html",
+      "motor/pc_control/test_console.log",
+      "motor/pc_control/top_test_console.log"
+    ]
+  },
+  {
+    "name": "矩形建系与自动左右绕行_97F4R1.zip",
+    "original_sha256": "a16725e35b28b6d89a77ef3c086ab28c3adc8af283c296a534de249abec532aa",
+    "published_sha256": "8f7242da5d8edcc4a12925a567c4ac33ed965ec5ebfec8344d1e36a521933d4f",
+    "omitted": [
+      "矩形建系与自动左右绕行_97F4R1/验证记录/field_tests.log",
+      "矩形建系与自动左右绕行_97F4R1/验证记录/gui_smoke.log",
+      "矩形建系与自动左右绕行_97F4R1/验证记录/python_tests.log"
+    ]
+  },
+  {
+    "name": "矩形建系与自动左右绕行_97F4R2.zip",
+    "original_sha256": "0c3c7e527f3c0c0d5f8d139075f7c61c6ef4a63b858949bf300d951737444fab",
+    "published_sha256": "fa7cbfbedc8d6397d53b8a19a7cca8dcb0900b1bda142db1c04a99e096e90bb6",
+    "omitted": [
+      "矩形建系与自动左右绕行_97F4R2/实机静止与离线规划记录/console_live.json",
+      "矩形建系与自动左右绕行_97F4R2/实机静止与离线规划记录/console_live_messages.txt",
+      "矩形建系与自动左右绕行_97F4R2/实机静止与离线规划记录/desktop_entry.json",
+      "矩形建系与自动左右绕行_97F4R2/实机静止与离线规划记录/planning_preview.json",
+      "矩形建系与自动左右绕行_97F4R2/实机静止与离线规划记录/scans.json",
+      "矩形建系与自动左右绕行_97F4R2/实机静止与离线规划记录/实采外框与绕行预览.png",
+      "矩形建系与自动左右绕行_97F4R2/验证记录/field_tests.log",
+      "矩形建系与自动左右绕行_97F4R2/验证记录/gui_smoke.log",
+      "矩形建系与自动左右绕行_97F4R2/验证记录/python_tests.log"
+    ]
+  },
+  {
+    "name": "矩形建系与自动左右绕行_97F4R3.zip",
+    "original_sha256": "1d4e6d1e652826e69009983e5237712be96d5c662f12bbf71fdb4e067cccea3e",
+    "published_sha256": "6c2add7c328ee6680c2121c69c9d0548ad932921b9930e43df7ec8913bb9eeb4",
+    "omitted": [
+      "矩形建系与自动左右绕行_97F4R3/实机静止与离线规划记录/console_live.json",
+      "矩形建系与自动左右绕行_97F4R3/实机静止与离线规划记录/console_live_messages.txt",
+      "矩形建系与自动左右绕行_97F4R3/实机静止与离线规划记录/desktop_entry.json",
+      "矩形建系与自动左右绕行_97F4R3/实机静止与离线规划记录/scans.json",
+      "矩形建系与自动左右绕行_97F4R3/验证记录/field_tests.log",
+      "矩形建系与自动左右绕行_97F4R3/验证记录/gui_smoke.log",
+      "矩形建系与自动左右绕行_97F4R3/验证记录/python_tests.log",
+      "矩形建系与自动左右绕行_97F4R3/验证记录/R3实机运行日志.jsonl"
+    ]
+  },
+  {
+    "name": "选题三基础任务_完整工程_20261029.zip",
+    "original_sha256": "228a80c642aa9398986a75307d4afa08ecc6f12797551dc4d30e5553b6b448c5",
+    "published_sha256": "839cc19fb70a1276d28fb53f275c5b06b68383dcd3475cef3f403213fe484b23",
+    "omitted": [
+      "motor/basic_tasks/task_menu_5.png",
+      "motor/basic_tasks/control_test.log",
+      "motor/basic_tasks/integration_test.log",
+      "motor/basic_tasks/control_test_console.log",
+      "motor/basic_tasks/top_test_console.log",
+      "motor/basic_tasks/integration_test_console.log",
+      "motor/basic_tasks/task_menu_1.png",
+      "motor/basic_tasks/release/timing.html",
+      "motor/basic_tasks/unit_test_console.log",
+      "motor/basic_tasks/build_final.log",
+      "motor/basic_tasks/task_menu_2.png",
+      "motor/basic_tasks/unit_test.log",
+      "motor/basic_tasks/task_menu_4.png",
+      "motor/basic_tasks/top_test.log",
+      "motor/basic_tasks/renderer_test_console.log",
+      "motor/basic_tasks/renderer_test.log",
+      "motor/basic_tasks/task_menu_3.png",
+      "motor/basic_tasks/task_menu_0.png"
+    ]
+  },
+  {
+    "name": "选题三基础任务_无线串口97B3_完整工程_20261030.zip",
+    "original_sha256": "3bb658544bffc29779b545e15756eaa47c8232d01af5b98e8bbcd4d15e08e4ec",
+    "published_sha256": "d1f76cfa49a9ff3c4b0c8fbccaef6bb9d68fb9c342753f2852aaf31c95d4d422",
+    "omitted": [
+      "motor/basic_tasks/task_menu_2.png",
+      "motor/basic_tasks/build_final.log",
+      "motor/basic_tasks/unit_test_console.log",
+      "motor/basic_tasks/task_menu_4.png",
+      "motor/basic_tasks/task_menu_1.png",
+      "motor/basic_tasks/integration_test.log",
+      "motor/basic_tasks/renderer_test.log",
+      "motor/basic_tasks/wireless_stream_test_console.log",
+      "motor/basic_tasks/renderer_test_console.log",
+      "motor/basic_tasks/top_test.log",
+      "motor/basic_tasks/task_menu_3.png",
+      "motor/basic_tasks/wireless_test_console.log",
+      "motor/basic_tasks/task_menu_5.png",
+      "motor/basic_tasks/integration_test_console.log",
+      "motor/basic_tasks/top_test_console.log",
+      "motor/basic_tasks/control_test_console.log",
+      "motor/basic_tasks/unit_test.log",
+      "motor/basic_tasks/task_menu_0.png",
+      "motor/basic_tasks/release/timing.html",
+      "motor/basic_tasks/control_test.log"
+    ]
+  },
+  {
+    "name": "麦轮车全模式提速与遥控修复_97F2.zip",
+    "original_sha256": "077d5eae54e009012c86c7b4304f32dc1de39d42b6b66fb0a8a4aae31f45d10e",
+    "published_sha256": "be0cbf33caa8e38fe5c167e24e3154fe0688a5e1e310b115af1d017b4fcf925e",
+    "omitted": [
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/build.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/gui_smoke.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/python_tests.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/timing.html",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/原故障离线复现.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/basic_nav_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/cloud_stream_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/directional_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/hold_top_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/manual_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/pc_bridge_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/pc_control_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/pc_motor_pipeline_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/snapshot_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/speed_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/wireless_stream_tb.log",
+      "麦轮车全模式提速与遥控修复_97F2/固件与验证/仿真记录/wireless_top_tb.log"
+    ]
+  },
+  {
+    "name": "麦轮车无线演示套件_97F0.zip",
+    "original_sha256": "5f0803fb488d7eefdefe8e9d06ac69fa329f32fe98688c3ad83d893f950ffed2",
+    "published_sha256": "95a495863b2b2a1eb62f1d0e32b634a7c22bdc16e7a0a7abdeb71f71eef42732",
+    "omitted": [
+      "麦轮车无线演示套件_97F0/固件与验证/build.log",
+      "麦轮车无线演示套件_97F0/固件与验证/gui_smoke.log",
+      "麦轮车无线演示套件_97F0/固件与验证/python_tests.log",
+      "麦轮车无线演示套件_97F0/固件与验证/timing.html",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/basic_nav_tb.log",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/pc_bridge_tb.log",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/pc_control_tb.log",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/pc_motor_pipeline_tb.log",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/speed_tb.log",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/wireless_stream_tb.log",
+      "麦轮车无线演示套件_97F0/固件与验证/仿真记录/wireless_top_tb.log"
+    ]
+  },
+  {
+    "name": "麦轮车自由导航与1.75倍提速_97F4.zip",
+    "original_sha256": "d629af69d256f2a4f9387f96a7a3c0c003580f9f0bc413eae859df0bfd2bffe0",
+    "published_sha256": "6e773acb3425c0ec44a685fedc3380bd45ae1518f30b68f68a1b806f9edf5a50",
+    "omitted": [
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/build.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/gui_smoke.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/python_tests.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/timing.html",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/旧版边框误配对照.png",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/basic_nav_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/cloud_stream_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/directional_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/hold_top_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/manual_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/pc_bridge_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/pc_control_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/pc_motor_pipeline_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/snapshot_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/speed_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/square_frame_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/wireless_stream_tb.log",
+      "麦轮车自由导航与1.75倍提速_97F4/固件与验证/仿真记录/wireless_top_tb.log"
+    ]
+  },
+  {
+    "name": "麦轮车遥控与雷达导航_97F1.zip",
+    "original_sha256": "d58aac6927fadae6cba3ca13f8a5a5b612b566d036a876a7f92d737dbb527b76",
+    "published_sha256": "3522717a25b0f96fbf62f77ec1a426a5f06e091f62521db4d244d09110b11d7b",
+    "omitted": [
+      "麦轮车遥控与雷达导航_97F1/固件与验证/build.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/gui_smoke.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/python_tests.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/timing.html",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/basic_nav_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/cloud_stream_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/directional_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/hold_top_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/manual_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/pc_bridge_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/pc_control_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/pc_motor_pipeline_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/snapshot_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/speed_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/wireless_stream_tb.log",
+      "麦轮车遥控与雷达导航_97F1/固件与验证/仿真记录/wireless_top_tb.log"
+    ]
+  },
+  {
+    "name": "麦轮车避障与建系改进_97F3.zip",
+    "original_sha256": "d59952de9fb504a81146faf4508619421efd6325f8f9bf9023086de63e0dc199",
+    "published_sha256": "84f2528fbb972ac697ab6f89bd733a2564ea4ca61e1461feb54a38038d60704f",
+    "omitted": [
+      "麦轮车避障与建系改进_97F3/固件与验证/build.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/gui_smoke.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/python_tests.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/timing.html",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/basic_nav_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/cloud_stream_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/directional_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/hold_top_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/manual_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/pc_bridge_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/pc_control_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/pc_motor_pipeline_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/snapshot_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/speed_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/square_frame_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/wireless_stream_tb.log",
+      "麦轮车避障与建系改进_97F3/固件与验证/仿真记录/wireless_top_tb.log"
+    ]
+  }
+]
