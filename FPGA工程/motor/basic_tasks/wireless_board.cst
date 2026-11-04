@@ -1,0 +1,175 @@
+// Combined physical constraints: stable car + verified P4 camera.
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Physical Constraints file
+//Part Number: GW5AT-LV60PG484AC1/I0
+//Device: GW5AT-60
+
+// ============================================================
+//  电机驱动引脚约束（已按 ACG720 原理图确认）
+//  参考：06_硬件图纸/ACG720-138&60K通用原理图.pdf 第2页(BANK2)、第11页(GPIO0)
+// ============================================================
+
+// 系统时钟 50MHz
+IO_LOC "clk" Y18;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+// 复位：按键 S0，低有效
+IO_LOC "rst_n" F15;
+IO_PORT "rst_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+// ---- 左前电机（GPIO0_0 / GPIO0_1，排针脚 1、2）----
+IO_LOC "lf_pwm" A13;
+IO_PORT "lf_pwm" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "lf_dir" A14;
+IO_PORT "lf_dir" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ---- 右前电机（GPIO0_2 / GPIO0_3，排针脚 3、4）----
+IO_LOC "rf_pwm" A15;
+IO_PORT "rf_pwm" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "rf_dir" A16;
+IO_PORT "rf_dir" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ---- 左后电机（GPIO0_4 / GPIO0_5，排针脚 5、6）----
+IO_LOC "lb_pwm" A18;
+IO_PORT "lb_pwm" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "lb_dir" A19;
+IO_PORT "lb_dir" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ---- 右后电机（GPIO0_6 / GPIO0_7，排针脚 7、8）----
+IO_LOC "rb_pwm" F13;
+IO_PORT "rb_pwm" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "rb_dir" F14;
+IO_PORT "rb_dir" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ---- 4 个正交编码器（GPIO0 排针脚 9-16，紧挨电机脚，同 bank16）----
+// 左前编码器 A/B
+IO_LOC "lf_ea" E13;
+IO_PORT "lf_ea" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "lf_eb" E14;
+IO_PORT "lf_eb" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+// 右前编码器 A/B
+IO_LOC "rf_ea" C13;
+IO_PORT "rf_ea" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "rf_eb" B13;
+IO_PORT "rf_eb" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+// 左后编码器 A/B
+IO_LOC "lb_ea" D14;
+IO_PORT "lb_ea" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "lb_eb" D15;
+IO_PORT "lb_eb" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+// 右后编码器 A/B
+IO_LOC "rb_ea" C14;
+IO_PORT "rb_ea" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "rb_eb" C15;
+IO_PORT "rb_eb" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// ============================================================
+//  串口调试输出（板载 CH340E，FPGA_UART_TX → CH340E RXD）
+//  原理图第 1 页：FPGA_UART_TX 引脚 M15；第 9 页：CH340E 引脚 9 RXD
+//  串口助手：115200 8N1
+// ============================================================
+IO_LOC "uart_tx" M15;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ============================================================
+//  IMU660RA（SPI 接口，GPIO0 排针脚 19-22）
+//  imu_sck=SCK  imu_mosi=SDI  imu_miso=SDO  imu_cs_n=CS
+//  电源：3.3V → P7 脚29，GND → P7 脚12/30（与编码器共用）
+// ============================================================
+IO_LOC "imu_sck" B15;
+IO_PORT "imu_sck" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "imu_mosi" B16;
+IO_PORT "imu_mosi" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "imu_cs_n" C17;
+IO_PORT "imu_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "imu_miso" D17;
+IO_PORT "imu_miso" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// ============================================================
+//  逐飞 DL1B 激光测距（I2C，GPIO0 排针脚 23-26，紧挨 IMU）
+//  tof_scl=SCL  tof_sda=SDA  tof_xs=XSHUT  tof_int=INT
+//  电源：5V → P7 脚11，GND → P7 脚12/30（模块板载 LDO，I2C 逻辑 3.3V）
+// ============================================================
+IO_LOC "tof_scl" E16;
+IO_PORT "tof_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tof_sda" D16;
+IO_PORT "tof_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tof_xs" B17;
+IO_PORT "tof_xs" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tof_int" B18;
+IO_PORT "tof_int" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// SPI TFT180: SCL is SCK; SDA is MOSI (not I2C).
+// Power: VCC=P7-29 (3.3V), GND=P7-30.
+IO_LOC "tft_scl" F16; // P7-31
+IO_PORT "tft_scl" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tft_sda" E17; // P7-32
+IO_PORT "tft_sda" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tft_reset" D20; // P7-33
+IO_PORT "tft_reset" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tft_dc" C20; // P7-34
+IO_PORT "tft_dc" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tft_cs_n" E19; // P7-35
+IO_PORT "tft_cs_n" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tft_bl" D19; // P7-36
+IO_PORT "tft_bl" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+
+// Verified user-key ball positions; inputs only. S0 remains rst_n/F15.
+IO_LOC "key_n[0]" A20;
+IO_PORT "key_n[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "key_n[1]" B20;
+IO_PORT "key_n[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "key_n[2]" A21;
+IO_PORT "key_n[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "key_n[3]" B21;
+IO_PORT "key_n[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// Source: ACG720 schematic pages 1/2/11, matched by PDF coordinates.
+// Checked against official GW5AT-60B/PBGA484A.json by audit_camera_pins.py.
+// Existing dashboard ports remain in ../src/dashboard.cst.
+IO_LOC "camera_data[0]" J2;
+IO_LOC "camera_data[1]" J1;
+IO_LOC "camera_data[2]" G1;
+IO_LOC "camera_data[3]" H2;
+IO_LOC "camera_data[4]" F1;
+IO_LOC "camera_data[5]" G2;
+IO_LOC "camera_data[6]" D1;
+IO_LOC "camera_data[7]" E1;
+IO_LOC "camera_pclk" B1;
+IO_LOC "camera_vsync" B2;
+IO_LOC "camera_href" A1;
+IO_LOC "camera_reset_n" N20;
+IO_LOC "camera_scl" M20;
+IO_LOC "camera_sda" L18;
+IO_LOC "camera_xclk" M17;
+IO_PORT "camera_data[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[4]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[5]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[6]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_data[7]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_pclk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_vsync" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_href" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_PORT "camera_reset_n" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "camera_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "camera_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "camera_xclk" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4 BANK_VCCIO=3.3;
+// P4-18 PWDN is pulled down on the PCB, not an FPGA port.
+
+
+// N10 TTL TX -> P7 physical pin 27 (confirm connector orientation).
+IO_LOC "lidar_rx" C18;
+IO_PORT "lidar_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// SEEKFREE V2.4: RX->P7-37, TX->P7-38, RTS->P7-39.
+IO_LOC "wireless_tx" F18;
+IO_LOC "wireless_rx" E18;
+IO_LOC "wireless_rts" F19;
+IO_PORT "wireless_tx" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=4 BANK_VCCIO=3.3;
+IO_PORT "wireless_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_PORT "wireless_rts" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;

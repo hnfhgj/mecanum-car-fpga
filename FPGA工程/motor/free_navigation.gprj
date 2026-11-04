@@ -1,0 +1,93 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="basic_tasks/basic_clearance.v" type="file.verilog" enable="1"/>
+        <File path="basic_tasks/basic_mission.v" type="file.verilog" enable="1"/>
+        <File path="basic_tasks/basic_ui.v" type="file.verilog" enable="1"/>
+        <File path="basic_tasks/basic_wheel_speed_loop.v" type="file.verilog" enable="1"/>
+        <File path="basic_tasks/wireless_uart_bridge.v" type="file.verilog" enable="1"/>
+        <File path="free_navigation/free_navigation_top.v" type="file.verilog" enable="1"/>
+        <File path="free_navigation/hold_drive.v" type="file.verilog" enable="1"/>
+        <File path="free_navigation/pc_ui.v" type="file.verilog" enable="1"/>
+        <File path="free_navigation/task_translation_scale.v" type="file.verilog" enable="1"/>
+        <File path="motion_strafe/basic_renderer.v" type="file.verilog" enable="1"/>
+        <File path="navigation_tuning/basic_uart_debug.v" type="file.verilog" enable="1"/>
+        <File path="navigation_tuning/directional_clearance.v" type="file.verilog" enable="1"/>
+        <File path="navigation_tuning/square_frame_fit.v" type="file.verilog" enable="1"/>
+        <File path="pc_control/command_rx.v" type="file.verilog" enable="1"/>
+        <File path="pc_control/motor_pipeline.v" type="file.verilog" enable="1"/>
+        <File path="pc_control/pc_wireless_bridge.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_atan2.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_attitude.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_attitude_program.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_buttons.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_camera.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_camera_capture.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_control.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_features.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_lidar.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_math.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_point_stream.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_pose.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_renderer.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_scan_core.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_scan_renderer.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_tft_display.v" type="file.verilog" enable="1"/>
+        <File path="pillar_nav/nav_ui.v" type="file.verilog" enable="1"/>
+        <File path="remote_drive/radar_snapshot.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_drive.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_grid_route.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_map.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_nav_top.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_project.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_renderer.v" type="file.verilog" enable="1"/>
+        <File path="square_nav/square_ui.v" type="file.verilog" enable="1"/>
+        <File path="src/attitude_cordic.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_clock_24.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_dashboard_top.v" type="file.verilog" enable="1"/>
+        <File path="src/dashboard_keys.v" type="file.verilog" enable="1"/>
+        <File path="src/dl1b.v" type="file.verilog" enable="1"/>
+        <File path="src/dl1b_config_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/heading_hold.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master.v" type="file.verilog" enable="1"/>
+        <File path="src/imu660ra.v" type="file.verilog" enable="1"/>
+        <File path="src/imu660ra_config_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/imu_attitude.v" type="file.verilog" enable="1"/>
+        <File path="src/motor_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/motor_top.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_dashboard_top.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_lidar.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_packet_queue.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_project_point.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_scan_core.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_scan_ram.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_scan_renderer.v" type="file.verilog" enable="1"/>
+        <File path="src/n10_sincos.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_camera.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_config.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_config_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_frame_ram.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_reset_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/quad_decoder.v" type="file.verilog" enable="1"/>
+        <File path="src/speed_measure.v" type="file.verilog" enable="1"/>
+        <File path="src/speed_pid.v" type="file.verilog" enable="1"/>
+        <File path="src/spi_master.v" type="file.verilog" enable="1"/>
+        <File path="src/tft180_display.v" type="file.verilog" enable="1"/>
+        <File path="src/tft180_font.v" type="file.verilog" enable="1"/>
+        <File path="src/tft180_init_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_enc_debug.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/wheel_speed_loop.v" type="file.verilog" enable="1"/>
+        <File path="wheel_mapping/channel_map.v" type="file.verilog" enable="1"/>
+        <File path="wireless_console/basic_demo.v" type="file.verilog" enable="1"/>
+        <File path="wireless_console/basic_nav_drive.v" type="file.verilog" enable="1"/>
+        <File path="basic_tasks/wireless_board.cst" type="file.cst" enable="1"/>
+        <File path="n10_build/lidar_verified.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
